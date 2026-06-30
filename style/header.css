@@ -1,0 +1,33 @@
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: brown;;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-weight: 650;
+}
+#logo a{
+    font-size: 20px;
+    font-weight: 650;
+    margin-left: 0;
+}
+
+header a:hover{
+    color: royalblue;
+}

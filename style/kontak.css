@@ -1,0 +1,16 @@
+#kontak {
+    background-color: brown;
+}
+
+#kontak h2 {
+    text-align: center;
+}
+
+#kontak p {
+    text-align: center;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: column;
+}
