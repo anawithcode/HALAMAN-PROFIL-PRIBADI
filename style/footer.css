@@ -1,4 +1,4 @@
-footer {
+#foot {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -7,3 +7,7 @@ footer {
     padding: 20px;
 }
 
+#social-links {
+    display: flex;
+    flex-direction: column;
+}

@@ -4,13 +4,13 @@
 }
 
 body {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(54, 52, 48);
 }
 
 section{
-    
     padding:20px;
 }
+
 .container{
     max-width: 1200px;
     margin: 0 auto;

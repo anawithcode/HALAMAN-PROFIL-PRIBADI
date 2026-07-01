@@ -7,33 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="container">
-        <div id="logo">
-            <a href="">Shiva Andriyana</a>
+    <header>
+        <div class="flex-header">
+            <div id="logo">
+                <img src="img/LOGO-ANA.png" alt="logo">
+                <a href="">Shiva Andriyana</a>
+            </div>
+            <nav class="navbar">
+                <a href="">Tentang</a> <!--  Kenapa pake <a> karena Membuat hyperlink (bisa diklik, pindah halaman/section) -->
+                <a href="">Proyek</a>
+                <a href="">Kontak</a>
+            </nav>
         </div>
-        <nav>
-            <a href="">Tentang</a> <!--  Kenapa pake <a> karena Membuat hyperlink (bisa diklik, pindah halaman/section) -->
-            <a href="">Proyek</a>
-            <a href="">Kontak</a>
-        </nav>
     </header>
 
-    <main class="container">
-        <section id="hero">
+    <main>
+        <section id="hero" class="container">
             <h1>Halo, perkenalkan nama saya Shiva Andriyana</h1>
             <p>Saya adalah seorang mahasiswi Institut Teknologi Kalimantan yang sedang memahami Programming</p>
             <img src="img/WebProfil1.png" alt="Ini Saya">
         </section>
 
-        <section id="about">
+        <section id="about" class="container">
             <h2>Tentang Saya</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus minus quam facilis quia rem repudiandae expedita libero, necessitatibus odit eum totam possimus corporis nam dolorum officiis aliquid accusantium, itaque perferendis.</p>
         </section>
 
-        <section id="proyek">
+        <section id="proyek" class="container">
             <h2>Proyek</h2>
             <div class="layout-proyek">
             <p class="proyek1">1</p>
@@ -43,23 +47,27 @@
         </section>
 
         <section id="kontak">
-            <h2>Hubungi Saya</h2>
-            <p>092822799239</p>
+            <div class="container">
+                <h2>Hubungi Saya</h2>
+                <p>092822799239</p>
+            </div>
         </section>
 
     </main>
 
-    <footer class="container">
+    <footer>
         <!-- ========== FOOTER ========== -->
-        <p>&copy; 2026 Shiva Andriyana.</p>
-        <!-- Link sosial media -->
-        <div id="social-links">
-            <a href="https://www.instagram.com/shvndryn?igsh=enZvc3R4aWI5ajh6">
-                <img src="" alt="Instagram">
-            </a>
-            <a href="https://github.com/anawithcode/itk-pemogramanterstruktur-kosproperty">
-                <img src="" alt="Github">
-            </a>
+        <div id="foot" class="container">
+            <p>&copy; 2026 Shiva Andriyana.</p>
+            <!-- Link sosial media -->
+            <div id="social-links">
+                <a href="https://www.instagram.com/shvndryn?igsh=enZvc3R4aWI5ajh6">
+                    <img src="" alt="Instagram">
+                </a>
+                <a href="https://github.com/anawithcode/itk-pemogramanterstruktur-kosproperty">
+                    <img src="" alt="Github">
+                </a>
+            </div>
         </div>
     </footer>
 </body>

@@ -1,5 +1,6 @@
 #kontak {
     background-color: brown;
+    max-width: 100%; 
 }
 
 #kontak h2 {
@@ -8,9 +9,4 @@
 
 #kontak p {
     text-align: center;
-}
-
-#social-links {
-    display: flex;
-    flex-direction: column;
 }
