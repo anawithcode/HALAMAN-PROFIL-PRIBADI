@@ -2,10 +2,6 @@
 
 Halaman web profil pribadi yang dibuat menggunakan HTML dan CSS murni. Proyek ini menampilkan informasi diri, tentang saya, proyek-proyek yang pernah dikerjakan, hingga informasi kontak dalam satu halaman (single page).
 
-## Preview
-
-![Preview Halaman Profil](img/WebProfil1.png)
-
 ## Fitur
 
 - **Header** — Navigasi utama halaman
