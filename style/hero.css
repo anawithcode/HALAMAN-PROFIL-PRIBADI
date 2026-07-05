@@ -2,16 +2,57 @@
     display:flex;
     justify-content:space-between;
     align-items:center;
-    gap:40px;
-    min-height: 50vh;
+    min-height: 80vh;
 }
 
 #hero img {
-    width: 200px;
-    height: 200px;
+    width: 650px;
+    height: auto;
+    filter: drop-shadow(0px 15px 25px rgba(153, 142, 142, 0.4));
+    transform: translateX(-280px);
 }
 
+
 #hero h1 {
-    font-size: 25px;
+    font-size: 60px;
+    line-height:1.1;
+}
+
+.hero-left{
+    flex: 0.5;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-center{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    z-index: 1;
+    position: relative;
+    bottom: 50px;
+}
+
+.hero-right{
+    flex: 2;
+    width: 400px;
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    left: 60%;
+    top: 40%;
+}
+
+
+.introduction-hero {
+    line-height: 3;
+}
+
+.as-hero {
+    line-height: 2;
+}
+
+.detail-hero-right {
+    line-height: 1.8;
 }
 
