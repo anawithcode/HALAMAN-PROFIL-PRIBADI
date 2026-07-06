@@ -1,6 +1,32 @@
-#about {
-    display: flex;
+#about {  
     gap: 40px;
-    align-items: flex-start;
+    padding: 150px;
+    height: 500px;
 }
+
+.contact-hero {
+    background-color: rgb(43, 38, 49);
+}
+
+.contact-hero-left {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    height: 150px;
+}
+
+.contact-hero-right {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    
+}
+
+#up-logo-hero img {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    bottom: 90px;
+}
+
 /*MASIH AGAK MEMBINGUNGKAN TENTANG GIT*/
