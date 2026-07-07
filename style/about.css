@@ -1,6 +1,6 @@
 #about {  
     gap: 40px;
-    padding: 150px;
+    padding: 200px;
     height: 500px;
 }
 
@@ -11,7 +11,7 @@
 .contact-hero-left {
     display: flex;
     justify-content: center;
-    gap: 150px;
+    gap: 200px;
     height: 150px;
 }
 
@@ -26,7 +26,66 @@
     position: relative;
     width: 70px;
     height: 70px;
-    bottom: 90px;
+    bottom: 50px;
 }
+
+#services{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    margin-top: 20px;
+    position: relative;
+    bottom: 350px;
+}
+
+.service-card{
+
+    width:260px;
+    height:320px;
+
+    background:#3d4254;
+
+    border-radius:5px;
+
+    padding:35px;
+     
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-end;
+
+    transition:.3s;
+    
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+
+    cursor:pointer;
+}
+
+.active{
+
+    background:#d19a27;
+
+    color:white;
+}
+
+.service-card h3{
+    font-size:32px;
+    margin:15px 0;
+}
+
+.service-card p{
+    color:#d6d6d6;
+}
+
+.active p{
+    color:white;
+}
+
 
 /*MASIH AGAK MEMBINGUNGKAN TENTANG GIT*/
