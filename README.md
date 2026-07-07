@@ -15,6 +15,15 @@ The website contains:
 - Contact Section
 - Footer with Social Media Links
 
+**Hero Section**
+![Hero](img/hero-ana.png)
+
+**About**
+![About](img/about-ana.png)
+
+**Footer**
+![Footer](img/footer-ana.png)
+
 ## Built With
 
 - HTML5
@@ -34,24 +43,22 @@ Through this project, I practiced:
 
 ## Project Structure
 
+```
 HALAMAN-PROFIL-PRIBADI/
-│
 ├── img/
-│ ├── AI-ANA-SHADOW.png
-│ ├── AI-ANA-USE.png
-│ └── LOGO-ANA.png
-│
+│   ├── AI-ANA-SHADOW.png
+│   ├── AI-ANA-USE.png
+│   └── LOGO-ANA.png
 ├── style/
-│ ├── about.css
-│ ├── body.css
-│ ├── footer.css
-│ ├── header.css
-│ ├── hero.css
-│ └── proyek.css
-│
+│   ├── about.css
+│   ├── body.css
+│   ├── footer.css
+│   ├── header.css
+│   ├── hero.css
+│   └── proyek.css
 ├── index.html
 └── README.md
-
+```
 
 ## Future Improvements
 
