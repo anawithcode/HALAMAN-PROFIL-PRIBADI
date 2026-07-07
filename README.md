@@ -1,52 +1,76 @@
-# Halaman Profil Pribadi
+# Personal Portfolio Website
 
-Halaman web profil pribadi yang dibuat menggunakan HTML dan CSS murni. Proyek ini menampilkan informasi diri, tentang saya, proyek-proyek yang pernah dikerjakan, hingga informasi kontak dalam satu halaman (single page).
+My first personal portfolio website built using HTML and CSS.
 
-## Fitur
+## About The Project
 
-- **Header** — Navigasi utama halaman
-- **Hero Section** — Perkenalan singkat dan tampilan utama
-- **About** — Informasi tentang diri saya
-- **Proyek** — Menampilkan daftar proyek/portofolio
-- **Kontak** — Informasi dan form untuk menghubungi saya
-- **Footer** — Bagian penutup halaman
+This project is a personal portfolio website created to showcase my profile, skills, and projects. It is also part of my learning journey in web development, focusing on building a solid understanding of HTML structure and CSS layout techniques.
 
-## 🗂️ Struktur Folder
+The website contains:
 
-```
+- Hero Section
+- About Me Section
+- Services Section
+- Projects Section
+- Contact Section
+- Footer with Social Media Links
+
+## Built With
+
+- HTML5
+- CSS3
+- Flexbox
+
+## Learning Objectives
+
+Through this project, I practiced:
+
+- Semantic HTML structure
+- CSS styling
+- Flexbox layout
+- Responsive design fundamentals
+- Organizing files and folders
+- Building a complete landing page from scratch
+
+## Project Structure
+
 HALAMAN-PROFIL-PRIBADI/
+│
 ├── img/
-│   ├── LOGO-ANA.png
-│   └── WebProfil1.png
+│ ├── AI-ANA-SHADOW.png
+│ ├── AI-ANA-USE.png
+│ └── LOGO-ANA.png
+│
 ├── style/
-│   ├── about.css
-│   ├── body.css
-│   ├── footer.css
-│   ├── header.css
-│   ├── hero.css
-│   ├── kontak.css
-│   └── proyek.css
+│ ├── about.css
+│ ├── body.css
+│ ├── footer.css
+│ ├── header.css
+│ ├── hero.css
+│ └── proyek.css
+│
 ├── index.html
-└── style.css
-```
+└── README.md
 
-## Teknologi yang Digunakan
 
-- **HTML5** — Struktur konten halaman
-- **CSS3** — Styling dan tata letak, dipisah per komponen (header, hero, about, proyek, kontak, footer) agar lebih rapi dan mudah dikelola
+## Future Improvements
 
-## Cara Menjalankan
+- Add JavaScript interactions
+- Implement dark/light mode
+- Add project filtering
+- Create responsive mobile version
+- Add animations and transitions
+- Connect contact form functionality
 
-1. Clone repository ini
-   ```bash
-   git clone https://github.com/username/HALAMAN-PROFIL-PRIBADI.git
-   ```
-2. Masuk ke folder proyek
-   ```bash
-   cd HALAMAN-PROFIL-PRIBADI
-   ```
-3. Buka file `index.html` menggunakan browser favorit kamu, atau jalankan dengan Live Server jika menggunakan VS Code
+## Author
 
-## 📌 Catatan
+**Shiva Andriyana**
 
-Proyek ini dibuat sebagai media untuk memperkenalkan diri secara digital sekaligus sarana latihan dalam mengembangkan kemampuan HTML dan CSS.
+Information Systems Student  
+Institut Teknologi Kalimantan
+
+GitHub:
+https://github.com/anawithcode
+
+Instagram:
+https://www.instagram.com/shvndryn
