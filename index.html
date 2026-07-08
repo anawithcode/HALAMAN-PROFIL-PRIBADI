@@ -18,9 +18,9 @@
                 <a href="">Shiva Andriyana</a>
             </div>
             <nav class="navbar">
-                <a href="">About</a> <!--  Kenapa pake <a> karena Membuat hyperlink (bisa diklik, pindah halaman/section) -->
-                <a href="">Project</a>
-                <a href="">Contact</a>
+                <a href="#about-nav">About</a> <!--  Kenapa pake <a> karena Membuat hyperlink (bisa diklik, pindah halaman/section) -->
+                <a href="#project">Project</a>
+                <a href="#foot">Contact</a>
             </nav>
         </div>
     </header>
@@ -47,7 +47,7 @@
                     <img src="img/LOGO-ANA.png" alt="logo">
                 </div>
                 <div class="contact-hero-left">
-                    <p>-Contact Me</p>
+                    <p id="about-nav">-Contact Me</p>
                     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
                 </div>
                 <div class="contact-hero-right">
@@ -56,29 +56,29 @@
                     <p> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
                 </div>
             </section>
-        </div>
+            <section id="services">
+
+                <div class="service-card active">
+                    <img src="img/icon1.png" alt="">
+                    <h3>Web Developer.</h3>
+                    <p>5 Projects</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="img/icon2.png" alt="">
+                    <h3>UI/UX Designer.</h3>
+                    <p>3 Projects</p>
+                </div>
+
+                <div class="service-card">
+                    <img src="img/icon3.png" alt="">
+                    <h3>AI Projects.</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+            </section>
+            </div>
     
-        <section id="services">
-
-            <div class="service-card active">
-                <img src="img/icon1.png" alt="">
-                <h3>Web Developer.</h3>
-                <p>5 Projects</p>
-            </div>
-
-            <div class="service-card">
-                <img src="img/icon2.png" alt="">
-                <h3>UI/UX Designer.</h3>
-                <p>3 Projects</p>
-            </div>
-
-            <div class="service-card">
-                <img src="img/icon3.png" alt="">
-                <h3>AI Projects.</h3>
-                <p>Coming Soon</p>
-            </div>
-
-        </section>
 
         <section id="project" class="container">
             <div class="project-title">
@@ -184,5 +184,81 @@
         </div>
     </footer>
 </body>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    
+    // ========== 1. SMOOTH SCROLL ==========
+    
+    const navLinks = document.querySelectorAll('.navbar a[href^="#"]');
+    const sections = document.querySelectorAll('section, footer div[id]');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            const target = document.querySelector(targetId);
+            
+            if (target) {
+                // Hitung offset untuk header (fixed)
+                const header = document.querySelector('header');
+                const headerHeight = header ? header.offsetHeight : 0;
+                const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // ========== 2. HIGHLIGHT NAV AKTIF SAAT SCROLL ==========
+    
+    function highlightNav() {
+        const scrollPos = window.scrollY + 100; // offset sedikit
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionId = section.getAttribute('id');
+            
+            if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+    
+    window.addEventListener('scroll', highlightNav);
+    
+    // ========== 3. INTERSECTION OBSERVER (Alternatif lebih smooth) ==========
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px',
+        threshold: 0
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                
+                navLinks.forEach(link => {
+                    link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                });
+            }
+        });
+    }, observerOptions);
+    
+    sections.forEach(section => observer.observe(section));
+    
+});
+</script>
 </html>
 <!--  GIT MASIH MEMBINGUNFKAN WKWK -->

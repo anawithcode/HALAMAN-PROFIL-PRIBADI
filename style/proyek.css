@@ -1,9 +1,9 @@
 #project{
     padding:10px 0;
-    
+    margin-bottom: 400px;
     justify-content: center;
-    bottom: 230px;
-    height: 700px;
+    margin-top: 400px;
+
 }
 
 .project-title{
@@ -40,9 +40,19 @@
     background:#39343c;
 
     transition:.3s;
+
 }
+
+.project-card:hover {
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.3);
+
+    cursor:pointer;
+}
+
 .project-card img{
-    width: 60px;
-    height: auto;
+    width: 150px;
+    height: 400px;
     border-radius:15px;
 }

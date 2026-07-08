@@ -1,6 +1,6 @@
 #about {  
     gap: 40px;
-    padding: 200px;
+    padding: 150px;
     height: 500px;
 }
 
@@ -34,9 +34,8 @@
     justify-content:center;
     gap:30px;
 
-    margin-top: 20px;
-    position: relative;
-    bottom: 350px;
+    
+    height: 10px;
 }
 
 .service-card{
@@ -55,6 +54,8 @@
     justify-content:flex-end;
 
     transition:.3s;
+    position: relative;
+    bottom: 270px;
     
 }
 
