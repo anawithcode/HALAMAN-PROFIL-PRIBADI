@@ -57,17 +57,18 @@ HALAMAN-PROFIL-PRIBADI/
 │   ├── hero.css
 │   └── proyek.css
 ├── index.html
-└── README.md
+├── README.md
+└── style.css
 ```
 
-## Future Improvements
+## Notes from lerrning this
 
-- Add JavaScript interactions
-- Implement dark/light mode
-- Add project filtering
-- Create responsive mobile version
-- Add animations and transitions
-- Connect contact form functionality
+- First, dont too **addict to understand everything**.
+- Second, learn thing that just **important** such us yeah u know lah, you've already learn, if u forget just search or ask ai.
+- Third, dont try to **memorized all** of this escpecially about styling.
+- Fourth, beacause in this era we have an ai to styling more easier and help us learn quickly (u just need to know, its okay if u forget)
+- Fifth, next time focus on purpose about program that u build rather just make random project.
+- at the end *"Be always consistent <3"*
 
 ## Author
 

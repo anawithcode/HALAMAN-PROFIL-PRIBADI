@@ -1,27 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // ========== 1. SMOOTH  SCROLL ============
+const links = document.querySelectorAll(".navbar a");
 
-    const navLinks = document.querySelectorAll('.navbar a[href^="#"]');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
+links.forEach(link => {
+    link.addEventListener("click", () => {
 
-            const targetId = this.getAttribute('href');
-            const target = document.querySelector(targetId);
+        // Hapus active dari semua link
+        links.forEach(item => item.classList.remove("active"));
 
-            if (target) {
-                // Hitung offset untuk header( fixed)
-                const header = document.querySelector('header');
-                const headerHeight = header ? header.offsetHeight : 0;
-                const targetPosition = target.getBoundingClientRect().top + window.scrollY - headerHeight - 20;
+        // Tambahkan active ke link yang diklik
+        link.classList.add("active");
 
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior : 'smooth'
-                })
-            }
-        })
-    })
-
+    });
 });

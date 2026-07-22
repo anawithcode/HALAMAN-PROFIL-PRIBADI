@@ -1,0 +1,3 @@
+let kocak = ana;
+
+// LOL KEKNYA CUKUP TAHU AJA BAGIAN HTML DAN CSS INI
